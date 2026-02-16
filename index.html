@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Kingdom Dash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-layout">
+    <section class="panel">
+      <h1>Cookie Kingdom Dash</h1>
+      <p class="subtitle">Collect jellies, dodge traps, and survive as long as you can.</p>
+      <div class="controls">
+        <p><strong>Move:</strong> ← / → or A / D</p>
+        <p><strong>Jump:</strong> Space / W / ↑</p>
+        <p><strong>Pause:</strong> P</p>
+      </div>
+      <button id="start-btn">Start Run</button>
+      <button id="restart-btn" disabled>Restart</button>
+    </section>
+
+    <section class="play-area">
+      <canvas id="game" width="900" height="420" aria-label="Cookie Kingdom game area"></canvas>
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lives: <span id="lives">3</span></div>
+        <div>Best: <span id="best">0</span></div>
+        <div>State: <span id="state">Ready</span></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
